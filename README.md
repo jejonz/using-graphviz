@@ -1,8 +1,21 @@
 # Using Graphviz
 
-This project shows how to use Graphviz in a Github project.
+This project shows how to use Graphviz and how to use it in Github documentation.
 
-The process is as simple as:
+## Install graphviz
+macOS example
+
+```
+brew install graphviz
+```
+
+See [Graphviz homepage](https://graphviz.org/download/) for other environments.
+
+For developing Visual Studio Code is recommended. Recommended extension with dot file preview support: `joaompinto.vscode-graphviz`.
+
+## Overview
+
+The process of creating a dot file and showing the diagram on Github is:
 * Generate a dot file with a diagram
 * Export the diagram to an image
 * Include the image in an Markdown file
@@ -12,7 +25,7 @@ or
 <img src="./example.svg">
 ```
 
-## Examples
+## Diagram examples
 
 Example 1 (from dot/example.dot)
 
@@ -61,9 +74,18 @@ The output looks like:
 
 ![example](./images/example-2.svg)
 
-## Convert to image
+## Convert dot file to image
 
-Convert the dot file into an image by running:
-`make svg` or `make png`. 
+This can be done with this command:
 
-See Makefile for the commands used for these conversions.
+```
+dot example.dot -Tsvg -o example.svg
+````
+
+Or using the Makefile:
+
+For dot to svg:
+`make svg`
+
+For dot to png:
+`make png`

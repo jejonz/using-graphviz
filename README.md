@@ -7,6 +7,8 @@ The process is as simple as:
 * Export the diagram to an image
 * Include the image in an Markdown file
 ```
+![example](./images/example.svg)
+or
 <img src="./example.svg">
 ```
 
@@ -24,7 +26,7 @@ digraph example {
 
 The output looks like:
 
-<img src="./example.svg">
+![example](./images/example.png)
 
 ## Convert to image
 

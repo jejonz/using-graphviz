@@ -1,0 +1,5 @@
+digraph example {
+    rankdir=LR;
+    Service -> API [label="GET /test"]
+    API -> DB [label="read/write db"]
+}

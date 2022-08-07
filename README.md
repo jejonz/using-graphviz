@@ -59,7 +59,7 @@ digraph {
 
 The output looks like:
 
-![example](./images/example-2.png)
+![example](./images/example-2.svg)
 
 ## Convert to image
 
